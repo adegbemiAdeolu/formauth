@@ -64,7 +64,7 @@ export const Text = styled.p`
     color: #FFFFFF;
     margin: auto;
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: 0.85rem;
     margin-bottom: 1rem;
 `
 
@@ -75,7 +75,7 @@ export const Link = styled(ReactRouterLink)`
 `
 
 export const TextSmall = styled.small`
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     color: grey;
 `
 
