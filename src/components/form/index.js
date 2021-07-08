@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Wrapper, Title, Input, Button, Link, Text, TextSmall } from "./FormElements";
+import { Container, Wrapper, Title, Input, SubmitButton, Link, Text, TextSmall, ErrorMessage } from "./FormElements";
 
 export default function Form({ children, ...restProps}) {
     return <Container {...restProps}>{children}</Container>;
@@ -17,16 +17,12 @@ Form.Input = function FormInput({ children, ...restProps}) {
     return <Input {...restProps}>{children}</Input>;
 }
 
-Form.Button = function FormButton ({ children, ...restProps }) {
-    return <Button {...restProps}>{children}</Button>;
+Form.SubmitButton = function FormSubmitButton ({ children, ...restProps }) {
+    return <SubmitButton {...restProps}>{children}</SubmitButton>;
 }
 
 Form.Text = function FormText ({ children, ...restProps }) {
     return <Text {...restProps}>{children}</Text>;
-}
-
-Form.Text = function FormText ({ children, ...restProps }) {
-    return <Button {...restProps}>{children}</Button>;
 }
 
 Form.Link = function FormLink ({ children, ...restProps }) {
@@ -35,4 +31,8 @@ Form.Link = function FormLink ({ children, ...restProps }) {
 
 Form.TextSmall = function FormTextSmall ({ children, ...restProps }) {
     return <TextSmall {...restProps}>{children}</TextSmall>;
+}
+
+Form.ErrorMessage = function FormErrorMessage ({ children, ...restProps }) {
+    return <ErrorMessage {...restProps}>{children}</ErrorMessage>;
 }
