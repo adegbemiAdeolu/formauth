@@ -19,14 +19,16 @@ export const Wrapper = styled.form`
 export const Title = styled.h1`
     color: #FFFFFF;
     font-size: 1.5rem;
+    margin-bottom: 2rem;
 `
 
 export const Input = styled.input`
     margin-bottom: 1rem;
-    padding: 0.4rem 0.2rem;
+    height: 30px;
+    outline: none;
     border: none;
     border-radius: 2px;
-    background-color: #333;
+    background-color: white;
 
     &:last-of-type {
         margin-bottom: 1.5rem;
@@ -34,6 +36,8 @@ export const Input = styled.input`
 
     ::placeholder {
         color: green;
+        font-style: italic;
+        padding-left: 2px;
     }
 `
 
@@ -65,8 +69,8 @@ export const Text = styled.p`
 `
 
 export const Link = styled(ReactRouterLink)`
-    color: green;
-    text-decoration: none;
+    color: #e87c03;
+    text-decoration: underline;
     cursor: pointer;
 `
 
