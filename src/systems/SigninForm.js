@@ -57,7 +57,7 @@ export default function SigninForm() {
                     </Form.SubmitButton>
 
                     <Form.Text>
-                        Don't have an account? <Form.Link to="/signup">Sign up here.</Form.Link> 
+                        Don't have an account? <Form.Link to="/">Sign up here.</Form.Link> 
                     </Form.Text>
 
                     <Form.TextSmall>Your data will not be shared with anyone. Your full privacy is guaranteed.</Form.TextSmall>
