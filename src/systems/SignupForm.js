@@ -19,9 +19,16 @@ export default function SignupForm() {
         firebase
             .auth()
             .createUserWithEmailAndPassword(emailAddress, password)
-            .then(() => {
-                history.push("/page");
-            })
+            .then((result) => 
+                result.user
+                    .updateProfile({
+                        displayName: firstName,
+                        // photoURL: Math.floor(Math.random() *5) + 1,
+                    })
+                    .then(() => {
+                        history.push("/page");
+                    })
+            )
             .catch((error) => {
                 setFirstName("");
                 setEmailAddress("");
